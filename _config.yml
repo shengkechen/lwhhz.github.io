@@ -99,17 +99,17 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "Globien Wiki Dictionary",
-        href: "https://github.com/globien/globien.github.io/wiki"
+        title: "哔哩哔哩",
+        href: "https://space.bilibili.com/46199519"
     },{
-        title: "Globien Community",
-        href: "https://globien.fandom.com/wiki/Globien_Wiki"
+        title: "微博",
+        href: "https://weibo.com/2586364595/profile?topnav=1&wvr=6"
     },{
-        title: "知乎：人造国际语",
-        href: "https://zhuanlan.zhihu.com/Artificial-International-Language"
+        title: "Steam",
+        href: "https://steamcommunity.com/profiles/76561198823093265/"
     },{
-        title: "知乎：Henri_Jambo",
-        href: "https://www.zhihu.com/people/henry-jiang-78" 
+        title: "特别鸣谢globien",
+        href: "https://github.com/globien/globien.github.io" 
     }
 ]
 
