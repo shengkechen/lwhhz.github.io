@@ -113,4 +113,9 @@ friends: [
     }
 ]
 
+---
+layout:     keynote
+iframe:     "http://huangxuan.me/js-module-7day/"
+---
+
 theme: jekyll-theme-cayman
