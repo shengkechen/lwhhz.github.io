@@ -110,6 +110,9 @@ friends: [
     },{
         title: "特别鸣谢globien",
         href: "https://github.com/globien/globien.github.io" 
+    },{
+        title: "这是我同学的网站",
+        href: "shengkechen.vercel.app"
     }
 ]
 
