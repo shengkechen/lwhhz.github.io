@@ -21,6 +21,39 @@ header-img: "img/post-bg-rwd.jpg"
 <head>
   <link rel="stylesheet" type="text/css" href="timer.css" />
 </head>
+<body>
+  <script type=”text/javascript”>
+function Countdown(end) {
+    this.end = end;
+    this.interval = null;
+
+    this.Init = function() {
+        this.interval = setInterval(this.GetCountdown, 1000);
+    }
+
+    this.GetCountdown = function() {
+        let date = new Date(end) - new Date();
+
+        if (date <= 0) {
+            $("#countdown").text("00天 00:00:00");
+            clearInterval(this.interval);
+            return null;
+        };
+
+        let d = Math.floor(date / 1000 / 60 / 60 / 24) < 10 ? '0' + Math.floor(date / 1000 / 60 / 60 / 24) : Math.floor(date / 1000 / 60 / 60 / 24);
+        let h = Math.floor(date / 1000 / 60 / 60 % 24) < 10 ? '0' + Math.floor(date / 1000 / 60 / 60 % 24) : Math.floor(date / 1000 / 60 / 60 % 24);
+        let m = Math.floor(date / 1000 / 60 % 60) < 10 ? '0' + Math.floor(date / 1000 / 60 % 60) : Math.floor(date / 1000 / 60 % 60);
+        let s = Math.floor(date / 1000 % 60) < 10 ? '0' + Math.floor(date / 1000 % 60) : Math.floor(date / 1000 % 60);
+
+        $("#countdown").text(d + "天 " + h + ":" + m + ":" + s);
+
+        return null;
+    }
+}
+
+let countdown = new Countdown('2021.12.30 18:00:00').Init();
+  </script>
+</body>
 
 <divid="countdown">
      00天00:00:00
