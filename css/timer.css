@@ -1,41 +1,6 @@
-<style>
-        body {
-            background-color: #ecd1d6;
-        }
-        
-        span {
-            display: inline-block;
-            padding: 0 10px;
-            height: 40px;
-            background-color: #58a0ca;
-            color: #fff;
-            line-height: 30px;
-            font-size: 30px;
-            font-weight: 700;
-            line-height: 40px;
-            text-align: center;
-            margin: 2px;
-            border-radius: 5px;
-        }
-        
-        .box {
-            width: 377px;
-            height: 500px;
-            background-color: #ecd1d6;
-            margin: 0 auto;
-        }
-        
-        .box .day {
-            background-color: #fff;
-            color: #58a0ca;
-            font-weight: 400;
-        }
-
-        .zi {
-            font-size: 30px;
-            font-weight: 700;
-            margin-bottom: 50px;
-            margin-top: 100px;
-            text-align: center;
-        }
-    </style>
+#countdown{
+    margin:90pxauto;
+    font-size:36px;
+    font-weight:700;
+    text-align:center;
+}
