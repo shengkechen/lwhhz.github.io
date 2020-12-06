@@ -18,6 +18,10 @@ header-img: "img/post-bg-rwd.jpg"
     <blockquote><p>飞花时节，垂杨巷陌，东风庭院。重帘尚如昔，但窥帘人远。<br>
     叶底歌莺梁上燕，一声声伴人幽怨。相思了无益，悔当初相见。————忆少年·飞花时节</p></blockquote>
 
+**距离高考还有**
+
+
+
 <html><head><style>#countdown {
 	margin:90px auto;
 	font-size:36px;
@@ -31,33 +35,35 @@ header-img: "img/post-bg-rwd.jpg"
     this.Init = function() {
         this.interval = setInterval(this.GetCountdown, 1000);
     }
-
+    
     this.GetCountdown = function() {
         let date = new Date(end) - new Date();
-
+    
         if (date <= 0) {
             $("#countdown").text("00天 00:00:00");
             clearInterval(this.interval);
             return null;
         };
-
+    
         let d = Math.floor(date / 1000 / 60 / 60 / 24) < 10 ? '0' + Math.floor(date / 1000 / 60 / 60 / 24) : Math.floor(date / 1000 / 60 / 60 / 24);
         let h = Math.floor(date / 1000 / 60 / 60 % 24) < 10 ? '0' + Math.floor(date / 1000 / 60 / 60 % 24) : Math.floor(date / 1000 / 60 / 60 % 24);
         let m = Math.floor(date / 1000 / 60 % 60) < 10 ? '0' + Math.floor(date / 1000 / 60 % 60) : Math.floor(date / 1000 / 60 % 60);
         let s = Math.floor(date / 1000 % 60) < 10 ? '0' + Math.floor(date / 1000 % 60) : Math.floor(date / 1000 % 60);
-
+    
         $("#countdown").text(d + "天 " + h + ":" + m + ":" + s);
-
+    
         return null;
     }
 }
 
 let countdown = new Countdown('2022.6.7 0:00:00').Init();</script></body></html>
 
+[^倒计时插件来源：www.jq22.com/webqd7180]: 
+
     <p>欢迎来到这里</p>
     
     <p>我是<strong>LWH</strong>，中国广东省惠州市高二在读生</p>
-
+    
     <p>在班上看到一位大佬在帮别人做个人博客，我顿时心血澎湃hhh，于是借用了globien网友的网站（十分感谢！！！）当然，作为一个没有人教的小白，我花了大量时间在研究文件上，也是多亏了那位网友的知乎文章。都说万事开头难，我会慢慢学习这类内容的！</p>
     
     <p>现在在玩的游戏：原神，守望先锋，赛博朋克2077（很快就出了）欢迎和我讨论。</p>
@@ -65,9 +71,9 @@ let countdown = new Countdown('2022.6.7 0:00:00').Init();</script></body></html>
     <p>最后，十八班nb！！！！</p>
     
     <p>（另外，这个网站有英文版，内容未修改，以后再说）</p>
-
-    <p></p>
     
+    <p></p>
+
 </div>
 
 <!-- English Version -->
@@ -76,13 +82,13 @@ let countdown = new Countdown('2022.6.7 0:00:00').Init();</script></body></html>
     Yet another Life-long Student.</p></blockquote>
 
     <p>Hi, I am <strong>Baiying Qiu</strong>，you can call me <strong>BY</strong>. I am an iOS software engineer and currently working in Xiamen</p>
-
+    
     <p>This is my personal blog, through making Github Pages and Jekyll.My GitHub  👉 <a href="http://github.com/qiubaiying">Github·BY</a>.</p>
     
     <p>I am a sports enthusiast, I like fitness, running and boxing.</p>
-
+    
     <h5>Talks</h5>
-
+    
     <ul>
     <li><a href="https://github.com">GitHub</a></li>
     <li><a href="http://jekyll.com.cn/">jekyll</a></li>
@@ -100,7 +106,7 @@ let countdown = new Countdown('2022.6.7 0:00:00').Init();</script></body></html>
 
     // bind hashchange event
     window.addEventListener('hashchange', _render);
-
+    
     // handle render
     function _render(){
         var _hash = window.location.hash;
@@ -117,7 +123,7 @@ let countdown = new Countdown('2022.6.7 0:00:00').Init();</script></body></html>
             $en.style.display = "none";
         }
     }
-
+    
     // handle select change
     function onLanChange(index){
         if(index == 0){
@@ -126,7 +132,7 @@ let countdown = new Countdown('2022.6.7 0:00:00').Init();</script></body></html>
             window.location.hash = "#en"
         }
     }
-
+    
     // init
     _render();
 </script>
